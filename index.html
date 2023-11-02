@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>moviedb</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <section class="sidebar">
+    <div>
+      <a href="index.html">
+        <img id="log" class="logo" src="images/logo-no-background.png" alt="logo">
+      </a>
+    </div>
+    <div class="side-links">
+      <ul>
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#">Favorites</a>
+        </li>
+        <li>
+          <a href="#">Upcoming</a>
+        </li>
+        <li class="dropdown">
+          <p>Genres</p>
+          <span class="drop-icon"><box-icon name='chevron-down'></box-icon></span>  
+        </li>
+        <div class="drop-content">
+          <ul>
+            <li>Horror</li>
+            <li>Adventure</li>
+            <li>Action</li>
+            <li>Comedy</li>
+            <li>Drama</li>
+            <li>Romance</li>
+            <li>Thriller</li>
+            <li>Crime</li>
+            <li>Mystery</li>
+            <li>Animation</li>
+            <li>Sci-Fi</li>
+            <li>Documentary</li>
+            <li>Family</li>
+            <li>War</li>
+            <li>Western</li>
+            <li>Fantasy</li>
+            <li>History</li>
+            <li>Biography</li>
+            <li>Sport</li>
+            <li>Musical</li>
+            <li>Reality</li>
+            <li>Adult</li>
+            <li>Game</li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </section>
+  <section class="main">
+    <nav>
+      <div>
+        <div class="open-btn">
+          <box-icon name='x' ></box-icon>
+        </div>
+        <div class="search">
+          <input type="search" 
+        placeholder="Search..."
+        name="movieSearch" id="movieSearch">
+         <button id="searchButton" type="submit" onclick="searchMovies()"><i class='bx bx-search'></i></button>
+        </div>
+      </div>
+      <div>login</div>
+    </nav>
+    <section class="main-content">
+      <div id="loading">
+        <img src="images/icegif-1260.gif" alt="animated gif">
+      </div>
+      <div class="movieContainer"></div>
+    </section>
+  </section>
+  <script src="js/script.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/fetch.js"></script>
+  <script src="js/genre.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

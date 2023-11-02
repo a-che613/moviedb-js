@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>moviedb</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/details.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <section class="sidebar">
+    <div>
+      <a href="index.html">
+        <img class="logo" src="images/logo-no-background.png" alt="logo">
+      </a>
+    </div>
+    <div class="side-links">
+      <ul>
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#">Favorites</a>
+        </li>
+        <li>
+          <a href="#">Upcoming</a>
+        </li>
+        <li class="dropdown">
+          <p>Genres</p>
+          <span><box-icon name='chevron-down'></box-icon></span>
+        </li>
+        <div class="drop-content">
+          <ul>
+            <li>Horror</li>
+            <li>Adventure</li>
+            <li>Action</li>
+            <li>Comedy</li>
+            <li>Drama</li>
+            <li>Romance</li>
+            <li>Thriller</li>
+            <li>Crime</li>
+            <li>Mystery</li>
+            <li>Animation</li>
+            <li>Sci-Fi</li>
+            <li>Documentary</li>
+            <li>Family</li>
+            <li>War</li>
+            <li>Western</li>
+            <li>Fantasy</li>
+            <li>History</li>
+            <li>Biography</li>
+            <li>Sport</li>
+            <li>Musical</li>
+            <li>Reality</li>
+            <li>Adult</li>
+            <li>Game</li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </section>
+  <section class="main">
+    <nav>
+      <div>
+        <div class="open-btn">
+          <box-icon name='x' ></box-icon>
+        </div>
+        <div class="search">
+          <input type="search" 
+        placeholder="Search..."
+        name="movieSearch" id="movieSearch"
+        disabled
+        >
+         <button id="searchButton" type="submit" onclick="searchMovies()"><i class='bx bx-search'></i></button>
+        </div>
+      </div>
+      <div>login</div>
+    </nav>
+    <section class="main-content">
+      <!-- <div id="loading">Loading...</div> -->
+      <div class="movieDetails">
+        <div class="movie-img"></div>
+        <div class="movie-details">
+          <h1 class="title"></h1>
+          <p class="mdetails"></p>
+          <div class="other-details">
+            <div>
+              <p>Released: <span class="released">12-10-2023</span></p>
+              <p>Genre: <span class="genre">Horror, adventure, action</span></p>
+            </div>
+            <div>
+              <p>Duration: <span class="duration">105mins</span></p>
+              <p>Language: <span class="language">English, Spanish</span></p>
+            </div>
+            <div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+  <script src="js/script.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/details.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
