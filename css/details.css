@@ -47,3 +47,25 @@
 .other-details div span {
   font-weight: 500;
 }
+
+@media screen and (max-width: 600px) {
+  .movieDetails {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid magenta; */
+  }
+  .movie-img {
+    width: 100%;
+  }
+  .movie-details {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 10px 0;
+  }
+  /* .mdetails {
+    border: 1px solid green;
+  }
+  .other-details {
+    border: 1px solid magenta;
+  } */
+}
