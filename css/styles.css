@@ -23,12 +23,17 @@ body {
   left: 0;
   width: 240px;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 .sidebar div:nth-child(1) {
   display: flex;
   justify-content: space-between;
   padding: 48px 10px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
 }
 
 .active {
@@ -132,6 +137,7 @@ nav {
   border-radius: 6px;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 nav div:nth-child(1){
   display: flex;
@@ -210,6 +216,7 @@ nav input:focus {
 .movieContainer div:hover {
   transform: scale(1.1);
   box-shadow: 2px 0 8px black;
+  z-index: 1;
 }
 .search {
   display: flex;
@@ -231,6 +238,7 @@ nav input:focus {
   top: 50%;
   left: 50%;
   transform: translate(0%, -50%);
+  z-index: 2;
 }
 
 #loading img {
@@ -239,4 +247,35 @@ nav input:focus {
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 2px 4px 8px grey;
+}
+.no-genre {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  width: 250px;
+  height: auto;
+  /* margin-top: 20px; */
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px grey;
+  background-color: rgb(36, 35, 35);
+  color: white;
+  z-index: 2;
+  padding: 20px;
+}
+.no-genre .close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.no-genre .content {
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+}
+.no-genre .close .close-icon {
+  cursor: pointer;
+  fill: white;
+  
 }
