@@ -47,6 +47,22 @@
 .other-details div span {
   font-weight: 500;
 }
+.bck {
+  background: black;
+  
+}
+.bck button {
+  width: 100% !important;
+  padding: 10px;
+  background: rgb(17, 17, 17);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.bck button:hover {
+  opacity: 50%;
+}
 
 @media screen and (max-width: 600px) {
   .movieDetails {

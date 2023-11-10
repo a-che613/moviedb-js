@@ -253,4 +253,11 @@ nav input:focus {
     box-shadow: none;
     z-index: 1;
   }
+  .sidebar {
+    position: absolute !important;
+    left: -100%;
+  }
+  .main {
+    margin-left: 0 !important;
+  }
 }
